@@ -15,11 +15,13 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ### `php artisan install:api`
 
-### api.php
+### `api.php`
 
 ```php
 Route::post('user/send', [MailNotifyController::class, 'index']);
 ```
+
+---
 
 ### `php artisan make:mail MailNotify --markdown=emailTemplate`
 
