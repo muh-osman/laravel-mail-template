@@ -1,3 +1,5 @@
+### `.env`
+
 ```php
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
@@ -10,6 +12,8 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 ### `php artisan install:api`
+
+### api.php
 
 ```php
 Route::post('user/send', [MailNotifyController::class, 'index']);
