@@ -25,6 +25,8 @@ Route::post('user/send', [MailNotifyController::class, 'index']);
 
 ### `php artisan make:mail MailNotify --markdown=emailTemplate`
 
+### `MailNotify.php`
+
 ```php
 <?php
 
@@ -87,6 +89,8 @@ class MailNotify extends Mailable
 
 ```
 
+### `emailTemplate.blade.php`
+
 ```php
 <x-mail::message>
 # Introduction
@@ -107,7 +111,11 @@ Thanks,<br>
 
 ```
 
+---
+
 ### `php artisan make:controller MailNotifyController`
+
+### `MailNotifyController.php`
 
 ```php
 <?php
