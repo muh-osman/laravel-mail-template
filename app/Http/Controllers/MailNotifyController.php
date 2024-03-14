@@ -17,6 +17,3 @@ class MailNotifyController extends Controller
         Mail::to($email)->send(new MailNotify($name, $email));
     }
 }
-
-
-
